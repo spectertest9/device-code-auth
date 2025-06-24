@@ -23,7 +23,7 @@ Usage:
 
     python3 device_auth.py           # use defaults
     GITHUB_SCOPE=repo python3 device_auth.py
-
+a945f87ad537bfddb109
 When running, the script will prompt you to navigate to the
 verification URL in a browser.  It will also try to open the URL
 automatically if your system supports it.
@@ -180,7 +180,7 @@ def authenticate_and_print_user(client_id: str, scope: str = "") -> None:
 
 def main() -> None:
     # Determine the client ID and scopes from environment variables
-    client_id = os.getenv("GITHUB_CLIENT_ID", "a945f87ad537bfddb109")
+client_id = os.getenv("GITHUB_CLIENT_ID", "a945f87ad537bfddb109")
     scope = os.getenv("GITHUB_SCOPE", "")
     try:
         authenticate_and_print_user(client_id, scope)
